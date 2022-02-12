@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.hijau {
+  color: green;
+}
+
+.orange {
+  color: orange;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+  overflow: scroll;
+}
