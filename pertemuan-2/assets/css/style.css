@@ -1,0 +1,171 @@
+/* @font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Regular.ttf);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+html {
+  margin: auto;
+  max-width: 1440px;
+  font-size: 10px;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 14rem;
+  color: #263238;
+  border-bottom: 1px solid #e6e9ec;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+nav .nav-brand {
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+nav .nav-section {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-section ul {
+  list-style: none;
+}
+
+nav .nav-section ul li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+nav .nav-section ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+}
+
+nav .nav-brand:hover,
+nav .nav-section ul li a:hover {
+  color: #407bff;
+}
+
+/* End Navbar */
+
+/* Header */
+
+header {
+  display: flex;
+  color: #263238;
+}
+
+header .bagian-satu {
+  flex-basis: 50%;
+  padding: 11%;
+}
+
+header .bagian-satu .text-hello {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+header .bagian-satu p {
+  font-size: 1.5rem;
+}
+
+header .bagian-satu .btn-info {
+  margin-top: 1.5rem;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  background-color: #407bff;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
+header .bagian-satu .btn-info:hover {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+header .bagian-dua {
+  flex-basis: 50%;
+  margin-top: 2%;
+  margin-right: 10%;
+}
+
+/* End Header */
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  nav {
+    padding: 2.4rem 8rem;
+  }
+
+  header .bagian-satu {
+    padding: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 2rem 4rem;
+  }
+
+  nav .nav-section ul li a,
+  header .bagian-satu p,
+  header .bagian-satu .btn-info {
+    font-size: 1.2rem;
+  }
+
+  header .bagian-satu {
+    padding: 10% 6%;
+  }
+
+  header .bagian-satu .text-hello {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .nav-brand {
+    margin: auto;
+  }
+
+  nav .nav-section {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header .bagian-satu {
+    order: 2;
+    text-align: center;
+  }
+
+  header .bagian-dua {
+    order: 1;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  header .bagian-satu .text-hello {
+    font-size: 2.8rem;
+  }
+}
